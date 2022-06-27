@@ -1,0 +1,41 @@
+h1 {
+    font-size: 60px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.2;
+}
+
+#header-text {
+    margin-top: 55px;
+    margin-bottom: 55px;
+    font-size: 38px;
+    font-weight: 500;
+}
+
+#group-outer {
+    border: 3px solid rgb(104, 88, 242);
+    height: 100%;
+}
+
+
+input[type="text"] {
+    outline: none;
+    box-shadow: none;
+    font-size: 13px;
+    height: 26px;
+    width: 60%;
+}
+
+form {
+    width: 30%;
+    height: 33px;
+}
+
+div button {
+    outline: none;
+    box-shadow: none;
+}
+
+/* search icon color */
+path {
+    fill: rgb(104, 88, 242);
+}

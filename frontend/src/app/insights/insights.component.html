@@ -1,0 +1,41 @@
+<div class="container-fluid">
+    <div class="row justify-content-center">
+        <div class="col-lg-6">
+            <div class="text-align-center h4 my-3"> Social Sentiments</div>
+            <table class="table">
+
+                <thead class="thead-light">
+                    <tr>
+                        <th scope="col">{{name}}</th>
+                        <th scope="col">Reddit</th>
+                        <th scope="col">Twitter</th>
+                    </tr>
+                    <tr>
+                        <th scope="row">Total Mentions</th>
+                        <td>{{totalMentionsR}}</td>
+                        <td>{{totalMentionsT}}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Positive Mentions</th>
+                        <td>{{positiveMentionsR}}</td>
+                        <td>{{positiveMentionsT}}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Negative Mentions</th>
+                        <td>{{negativeMentionsR}}</td>
+                        <td>{{negativeMentionsT}}</td>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+    <div class="row mt-3">
+        <div class="col-lg-6">
+            <app-recommendation-chart [recommendation]="recommendation"></app-recommendation-chart>
+        </div>
+        <div class="col-lg-6">
+            <app-earnings-chart [earnings]="earnings">
+            </app-earnings-chart>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,78 @@
+#meta-ticker, .latest-last {
+  font-size: 30px;
+}
+
+#meta-name, .change-latest {
+  font-size: 18px;
+}
+
+#buy-button {
+  outline: none;
+  box-shadow: none;
+}
+
+path.neg {
+  color: red;
+}
+
+path.star-fill-icon {
+  color: rgb(255, 195, 0);
+}
+
+path.pos {
+  color: green;
+}
+
+/* .resize{
+  width: 70%;
+  height: auto;
+} */
+
+.card-title {
+  line-height: 20px;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.stockpriceabove{
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+@media (min-width: 900px) {
+  img {
+    width: 55%;
+  }
+  .resize{
+    width: 70%;
+    height: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  img {
+    width: 50px;
+  }
+  .resize{
+    width: 30%;
+    height: auto;
+  }
+
+  .mobile-logo{
+    padding: 0px;
+  }
+
+  .h1{
+    font-size: 25px;
+  }
+
+  .h3{
+    font-size:20px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+  img {
+    width: 45%;
+  }
+}

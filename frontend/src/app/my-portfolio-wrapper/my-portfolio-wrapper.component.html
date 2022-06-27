@@ -1,0 +1,24 @@
+<!--<app-navbar></app-navbar>-->
+<div class="container">
+  <div class="pt-5">
+    <ngb-alert style="text-align: center;" *ngIf="boughtMessage" [type]="alertColor1" (close)="boughtMessage = ''">{{
+      boughtMessage }}</ngb-alert>
+    <span class="h1">My Portfolio</span>
+  </div>
+  <div class="py-3">
+    <span class="h3">Money in Wallet: ${{moneyFromStorage.toFixed(2)}}</span>
+  </div>
+  <mat-progress-spinner class="mt-5 mx-auto" strokeWidth="5" diameter="60"
+    *ngIf="noPortfolioAlert == false && stockData == undefined" mode="indeterminate"></mat-progress-spinner>
+  <div *ngIf="noPortfolioAlert == true">
+    <div class="mx-auto">
+      <div class="alert alert-warning text-center text-dark" role="alert">
+        Currently you don't have any stock.
+      </div>
+    </div>
+  </div>
+  <div *ngIf="noPortfolioAlert == false && stockData != undefined">
+    <app-my-portfolio (modifyPortfolio)="modifyPortfolio($event)" [portfolioElement]="portfolio"
+      *ngFor="let portfolio of stockData"></app-my-portfolio>
+  </div>
+</div>
